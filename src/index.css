@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #FBF8F3;
+  --color-cream: #F4EEE4;
+  --color-ink: #2B2824;
+  --color-muted: #857C71;
+  --color-line: #E6DDCF;
+  --color-gold: #A8854F;
+  --color-sage: #3F5647;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Jost", system-ui, sans-serif;
+  --font-arabic: "Amiri", serif;
+}
+
+html {
+  font-family: var(--font-sans);
+  background: #E9E3D9;
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-paper);
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  transition: background-color 0.2s, color 0.2s, transform 0.15s;
+  cursor: pointer;
+}
+.btn:active { transform: scale(0.97); }
+
+.btn-solid {
+  background: var(--color-sage);
+  color: var(--color-paper);
+}
+.btn-solid:hover { background: #33473A; }
+
+.btn-outline {
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+}
+.btn-outline:hover { background: rgba(168, 133, 79, 0.08); }
+
+.watercolor {
+  mix-blend-mode: multiply;
+  -webkit-mask-image: radial-gradient(ellipse 50% 50% at center, #000 80%, transparent 100%);
+  mask-image: radial-gradient(ellipse 50% 50% at center, #000 80%, transparent 100%);
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes petal-fall {
+  0%   { transform: translate3d(0, -5vh, 0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 1; }
+  50%  { transform: translate3d(var(--sway), 50vh, 0) rotate(180deg); }
+  90%  { opacity: 1; }
+  100% { transform: translate3d(0, 105vh, 0) rotate(360deg); opacity: 0; }
+}
+.petal {
+  animation: petal-fall linear infinite;
+  will-change: transform;
+}

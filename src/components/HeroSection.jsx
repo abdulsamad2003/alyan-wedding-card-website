@@ -41,7 +41,8 @@ export default function HeroSection() {
     <>
     <section className="relative isolate pb-14 text-center" style={{ clipPath: 'inset(0)' }}>
       {/* clip-path confines the fixed layer to this section; background-attachment: fixed is broken on iOS */}
-      <div className="pointer-events-none fixed inset-y-0 left-1/2 -z-10 w-full max-w-[440px] -translate-x-1/2">
+      {/* h-lvh stays constant while the mobile address bar collapses, so bg-cover doesn't rescale */}
+      <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-lvh w-full max-w-[440px] -translate-x-1/2">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: 'url(/images/palace.png)' }}

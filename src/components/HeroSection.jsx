@@ -4,21 +4,21 @@ import { Reveal } from './ui';
 const couple = [
   {
     role: 'The Groom',
-    name: 'Sufiyan Joad',
+    name: 'Alyan Joad',
     relation: 'Son of',
-    parents: ['Mr. Mohd Abbas Joad', 'Mrs. Shabana Joad'],
+    parents: ['Mr. Akhtar Ali Joad', 'Mrs. Nasreen Akhtar Ali Joad'],
   },
   {
     role: 'The Bride',
-    name: 'Namira Bains',
+    name: 'Madiha Parihar',
     relation: 'Daughter of',
-    parents: ['Mr. Gulam Nabi Bains', 'Mrs. Shabnam Bains'],
+    parents: ['Mr. Shakil Ahmed Parihar', 'Mrs. Jabeen Shakil Ahmed Parihar'],
   },
 ];
 
 const events = [
-  { title: 'Nikkah', date: '16', day: 'Monday', time: '8:00 PM' },
-  { title: 'Walima', date: '17', day: 'Tuesday', time: '2:00 PM' },
+  { title: 'Nikah', date: '07', day: 'Saturday', time: '10:00 PM' },
+  { title: 'Walima', date: '08', day: 'Sunday', time: '12:00 PM' },
 ];
 
 function Person({ role, name, relation, parents }) {
@@ -78,7 +78,7 @@ export default function HeroSection() {
 
             <p className="eyebrow text-[10px] text-white/75">Together with their families</p>
             <p className="mt-1.5 font-serif text-[15px] italic leading-snug text-white/70">
-              invite you to the Nikkah &amp; Walima of
+              invite you to the Nikah &amp; Walima of
             </p>
 
             <div className="my-4 flex items-center justify-center gap-3">

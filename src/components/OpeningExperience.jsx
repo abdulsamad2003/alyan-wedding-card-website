@@ -80,9 +80,9 @@ export default function OpeningExperience({ onOpen, onDone }) {
             <div className="relative flex size-32 flex-col items-center justify-center rounded-full border border-gold/60 bg-paper/95 shadow-[0_10px_40px_rgba(90,60,20,0.25)]">
               <div className="absolute inset-1.5 rounded-full border border-gold/30" />
               <span className="font-serif text-[38px] leading-none text-ink">
-                S<span className="italic text-gold">&amp;</span>N
+                A<span className="italic text-gold">&amp;</span>M
               </span>
-              <span className="eyebrow mt-1 text-[9px] text-muted">16 · 11 · 26</span>
+              <span className="eyebrow mt-1 text-[9px] text-muted">07 · 11 · 26</span>
             </div>
           </div>
         </motion.div>

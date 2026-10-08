@@ -4,21 +4,21 @@ import { Reveal, SectionTitle } from './ui';
 const events = [
   {
     arabic: 'عقد النكاح',
-    title: 'Nikkah',
-    day: 'Monday',
-    date: '16 November 2026',
-    time: '8:00 PM onwards',
-    venue: 'Imambagh (Takiya)',
-    address: 'Fatehpur Shekhawati - 332301',
+    title: 'Nikah',
+    day: 'Saturday',
+    date: '07 November 2026',
+    time: '10:00 PM onwards',
+    venue: 'Near City Centre Market',
+    address: 'Fatehpur, Shekhawati',
   },
   {
     arabic: 'دعوة وليمة',
     title: 'Walima',
-    day: 'Tuesday',
-    date: '17 November 2026',
-    time: '2:00 PM onwards',
-    venue: 'A.G. Khan Road',
-    address: 'Near Khanji ki Haveli, Fatehpur Shekhawati - 332301',
+    day: 'Sunday',
+    date: '08 November 2026',
+    time: '12:00 PM onwards',
+    venue: 'Joad House',
+    address: 'Bilal Masjid Nari, Fatehpur, Shekhawati',
   },
 ];
 
